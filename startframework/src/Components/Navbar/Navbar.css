@@ -1,0 +1,45 @@
+nav {
+  background-color: #2c3e50;
+  z-index: 3;
+}
+
+nav h1 {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+nav h1:hover {
+  color: cyan;
+}
+
+#nav-link {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+#nav-link:hover {
+  color: cyan;
+}
+
+.activ-link {
+  background-color: rgba(26, 37, 47, 0.6);
+}
+.navbar{
+  background: radial-gradient(
+  ellipse farthest-corner at right bottom,
+  #FEDB37 0%, 
+  #FDB931 8%, 
+  #9f7928 30%, 
+  #8A6E2F 40%, 
+  transparent 80%
+),
+radial-gradient(
+  ellipse farthest-corner at left top,
+  #FFF4A0 0%,    
+  #FFE38A 8%,    
+  #D1B464 25%, 
+  #5d4a1f 62.5%, 
+  #5d4a1f 100%
+);
+
+}

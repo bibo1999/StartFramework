@@ -1,0 +1,102 @@
+.t-color {
+  color: #2c3e50;
+}
+ .custom-btn {
+            position: relative;
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.8rem;
+            padding: 15;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .custom-btn::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 0.375rem;
+            padding: 3px;
+            background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), 
+                        radial-gradient(ellipse farthest-corner at left top, #fff189 0%, #FFE38A 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+            mask-composite: exclude;
+            z-index: -1;
+        }
+
+        .custom-btn-inner {
+            display: block;
+            padding: 0.75rem 3rem;
+            background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), 
+                        radial-gradient(ellipse farthest-corner at left top, #fff189 0%, #FFE38A 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+            border-radius: 0.375rem;
+        }
+
+        .custom-btn:hover {
+            transform: translateY(-2px);
+            transition: transform 0.2s ease;
+            color: #fff!important;
+        }
+
+        .custom-btn:active {
+            transform: translateY(0);
+            color: #fff!important;
+        }
+
+#contact #line {
+  width: 80px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 0 10px;
+}
+
+#contact .input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 6px 12px;
+  font-size: 16px;
+  color: #777;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+#contact .input-container {
+  position: relative;
+}
+
+#contact input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#contact #uName:focus + label[for="uName"] {
+  top: -20px;
+  font-size: 12px;
+  color: #2c3e50;
+  opacity: 1;
+}
+
+#contact #uAge:focus + label[for="uAge"] {
+  top: -20px;
+  font-size: 12px;
+  color: #2c3e50;
+  opacity: 1;
+}
+
+#contact #uEmail:focus + label[for="uEmail"] {
+  top: -20px;
+  font-size: 12px;
+  color: #2c3e50;
+  opacity: 1;
+}
+
+#contact #uPass:focus + label[for="uPass"] {
+  top: -20px;
+  font-size: 12px;
+  color: #2c3e50;
+  opacity: 1;
+}
+

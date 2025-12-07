@@ -1,0 +1,54 @@
+.t-color {
+  color: #2c3e50;
+}
+
+#portfolio #line {
+  width: 80px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 0 10px;
+}
+
+.card {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(10, 14, 47, 0.8);
+}
+
+.overlay {
+  background-color: rgba(10, 14, 47, 0.8);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+
+.gold-gradient {
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #FEDB37 0%, 
+      #FDB931 8%, 
+      #9f7928 30%, 
+      #8A6E2F 40%, 
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #FFF4A0 0%,    
+      #FFE38A 8%,    
+      #D1B464 25%, 
+      #5d4a1f 62.5%, 
+      #5d4a1f 100%
+    );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
